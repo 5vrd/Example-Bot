@@ -19,36 +19,28 @@ Perfect for beginners and advanced developers who want a solid starting point fo
 - **Flexible prefix system**: Change the prefix easily in the configuration file.
 - **Error handling included**: Catches errors in commands and logs them.
 
----
+## Install depedencies
+```
+npm install
+```
 
-## Folder Structure
-src
-├── commands/ # All bot commands
-│ └── ping.js
-├── events/ # Bot event handlers
-│ ├── ready.js
-│ └── message.js
-├── handlers/ # Load commands and events dynamically
-│ ├── commandHandler.js
-│ └── eventHandler.js
-├── utils/ # Utility functions (e.g., logger)
-│ └── logger.js
-├── config/ # Configuration files
-│ └── config.json
-├── index.js # Main bot file
-├── package.json # Node.js dependencies
-└── .gitignore # Files and folders to ignore in Git
+## Configure your bot:
 
+- Open config/config.json
+- Replace "YOUR_BOT_TOKEN" with your Discord bot token
+- Set your preferred prefix (default is !)
 
-This folder structure allows you to **easily scale your bot** by adding more commands, events, or utilities without cluttering the main file.
+```
+{
+  "token": "YOUR_BOT_TOKEN",
+  "prefix": "!"
+}
+```
 
----
+## Usage
 
-## Installation
-
-1. **Clone this repository:**
-
-```bash
-git clone https://github.com/your-username/my-bot.git
-cd src
+- Start the bot normally
+```
+npm start
+```
 
