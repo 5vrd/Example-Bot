@@ -39,8 +39,16 @@ npm install
 
 ## Usage
 
-- Start the bot normally
+- Start the bot
 ```
 npm start
 ```
 
+## Usage command
+
+- Test the ping command in Discord:
+```
+!ping
+```
+
+The bot will reply with Pong!, showing that it is online and working.
