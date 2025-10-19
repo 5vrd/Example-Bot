@@ -22,4 +22,33 @@ Perfect for beginners and advanced developers who want a solid starting point fo
 ---
 
 ## Folder Structure
+src
+├── commands/ # All bot commands
+│ └── ping.js
+├── events/ # Bot event handlers
+│ ├── ready.js
+│ └── message.js
+├── handlers/ # Load commands and events dynamically
+│ ├── commandHandler.js
+│ └── eventHandler.js
+├── utils/ # Utility functions (e.g., logger)
+│ └── logger.js
+├── config/ # Configuration files
+│ └── config.json
+├── index.js # Main bot file
+├── package.json # Node.js dependencies
+└── .gitignore # Files and folders to ignore in Git
+
+
+This folder structure allows you to **easily scale your bot** by adding more commands, events, or utilities without cluttering the main file.
+
+---
+
+## Installation
+
+1. **Clone this repository:**
+
+```bash
+git clone https://github.com/your-username/my-bot.git
+cd src
 
